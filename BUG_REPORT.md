@@ -29,5 +29,24 @@
 - **Problem**: After game over, user had to refresh the page.
 - **Fix (in progress)**: Plan to add a "Play Again" button to reset game state.
 
+---
+
+### Additional Bugs Found During Implementation
+
+- **Detailed ship visuals not showing during placement:**  
+  Ships weren’t rendering due to a condition blocking them. Fixed by removing that condition.
+
+- **Undo button not working properly:**  
+  The undo logic prevented going back to an empty state (`historyIndex <= 0`). Changed to allow undoing all the way back (`historyIndex < 0`).
+
+---
+
+### Issues Requested and Fixed During Development
+
+- Manual cell-by-cell ship placement instead of auto-placement after first click  
+- Ships needed to be visible during gameplay  
+- Added color coding: yellow for hits, red shading for sunk ships  
+- Added undo/redo functionality and manual ship selection for placement
+
 
 add bug report file
