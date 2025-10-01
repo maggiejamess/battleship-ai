@@ -16,15 +16,6 @@ A simple web-based Battleship game where you play against a smart AI opponent.
 
 ---
 
-## Technologies Used (via Devin + exported to GitHub)
-
-- React
-- Vite
-- JavaScript
-- Deployed using DevinApps
-
----
-
 ## Bug Report
 
 See [BUG_REPORT.md](./BUG_REPORT.md) for details on bugs encountered and fixes applied during development.
@@ -34,7 +25,7 @@ See [BUG_REPORT.md](./BUG_REPORT.md) for details on bugs encountered and fixes a
 ## Development Process
 
 1. **Initial Project Definition with Devin AI**  
-   I began by clearly outlining the scope and requirements of the Battleship game using Devin. This involved describing game mechanics, UI expectations (like ship placement with shaded squares), and gameplay rules in simple, straightforward language to ensure the AI understood the goals.
+   I began by outlining the scope and requirements of the Battleship game using Devin. This involved describing game mechanics, UI expectations (like ship placement with shaded squares), and gameplay rules in simple, straightforward language to ensure the AI understood the goals.
 
 2. **Building the Initial Game Prototype**  
    Using Devin’s capabilities, I generated the first working version of the game. This included core features such as board setup, ship placement, and basic AI opponent logic.
@@ -43,21 +34,21 @@ See [BUG_REPORT.md](./BUG_REPORT.md) for details on bugs encountered and fixes a
    I played multiple rounds of the game to identify bugs and usability issues. After each testing phase, I collaborated with Devin to address the problems, which included fixing visual bugs, improving ship placement controls, and enhancing the AI’s behavior.
 
 4. **Feature Enhancements and Visual Improvements**  
-   Once the initial bugs were resolved, I worked with Devin to add more detailed features—such as color-coded hits and sunk ships, manual ship placement per cell, and undo/redo functionality—to improve the overall user experience.
+   Once the initial bugs were resolved, I worked with Devin to add more detailed features—such as color-coded hits and sunk ships, manual ship placement per cell, and undo/redo functionality—to improve user experience.
 
 5. **Exporting the Project to GitHub**  
-   After stabilizing the game, I used Devin to export the full project code into a public GitHub repository for version control, collaboration, and submission purposes.
+   After stabilizing the game, I used Devin to export the full project code into a public GitHub repository.
 
 6. **Documentation Creation**  
-   I created a detailed README file explaining the project overview, gameplay instructions, technology stack, and setup steps to run the game locally or deploy it elsewhere.
+   I created a detailed README file explaining the project overview, gameplay instructions and steps I took to build out and finalize the game.
 
 7. **Bug Identification and Documentation**  
-   I engaged Devin to help identify all bugs found during development and improvements made. This process ensured comprehensive documentation of challenges and solutions.
+   I utilized Devin to help identify all bugs found during development and improvements made. I asked Devin to document + share exactly what problems were identified and the fix made to them. 
 
 8. **Creating a Formal Bug Report**  
-   Leveraging the collaboration with Devin and my own notes, I compiled a thorough bug report (`BUG_REPORT.md`) that outlines each issue encountered and the corresponding fixes applied throughout the project.
+   With the collaboration with Devin and my own notes, I added a bug report (`BUG_REPORT.md`) that outlines each issue encountered and the fixes applied throughout the project.
 
 9. **Final Testing and Deployment**  
-   Finally, I conducted end-to-end testing on the deployed game to confirm that all features worked as expected and that the AI opponent was sufficiently challenging.
+   Finally, I conducted testing on the deployed game to confirm that all features worked as expected and that the AI opponent was sufficiently challenging. Of the 10 times I played, I won 40% of the time.
 
 
