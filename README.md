@@ -49,6 +49,6 @@ See [BUG_REPORT.md](./BUG_REPORT.md) for details on bugs encountered and fixes a
    With the collaboration with Devin and my own notes, I added a bug report (`BUG_REPORT.md`) that outlines each issue encountered and the fixes applied throughout the project.
 
 9. **Final Testing and Deployment**  
-   Finally, I conducted testing on the deployed game to confirm that all features worked as expected and that the AI opponent was sufficiently challenging. Of the 10 times I played, I won 40% of the time.
+   Finally, I conducted testing on the deployed game to confirm that all features worked as expected and that the AI opponent was sufficiently challenging. Of the 10 times I played, I won 60% of the time.
 
 
