@@ -174,7 +174,26 @@ function App() {
 
   function selectShip(index: number) {
     if (playerShips[index].placed) {
-      setMessage(`${SHIPS[index].name} already placed. Use Undo to replace it.`)
+      const ship = playerShips[index]
+      const newBoard = playerBoard.map(row => [...row])
+      
+      ship.coordinates.forEach(({ row, col }) => {
+        newBoard[row][col] = 'empty'
+      })
+      
+      const newShips = [...playerShips]
+      newShips[index] = { ...ship, placed: false, coordinates: [] }
+      
+      const newHistory = placementHistory.slice(0, historyIndex + 1)
+      newHistory.push({ board: newBoard, ships: newShips })
+      setPlacementHistory(newHistory)
+      setHistoryIndex(newHistory.length - 1)
+      
+      setPlayerBoard(newBoard)
+      setPlayerShips(newShips)
+      setCurrentShipIndex(index)
+      setSelectedCells([])
+      setMessage(`${ship.name} removed. Place your ${ship.name} (${ship.size} cells) - Click cells to select`)
       return
     }
     setCurrentShipIndex(index)
@@ -187,6 +206,12 @@ function App() {
       if (currentShipIndex >= playerShips.length) return
       
       const ship = playerShips[currentShipIndex]
+      
+      if (ship.placed) {
+        setMessage(`${ship.name} is already placed! Click the ship indicator to remove it first.`)
+        return
+      }
+      
       const clickedCell = { row, col }
       
       const isAlreadySelected = selectedCells.some(c => c.row === row && c.col === col)
@@ -619,7 +644,7 @@ function App() {
                     key={idx}
                     onClick={() => selectShip(idx)}
                     className={`px-4 py-2 rounded transition-all ${
-                      ship.placed ? 'bg-green-500 text-white cursor-default' : idx === currentShipIndex ? 'bg-blue-500 text-white hover:bg-blue-600' : 'bg-gray-200 text-gray-600 hover:bg-gray-300 cursor-pointer'
+                      ship.placed ? 'bg-green-500 text-white opacity-60 hover:opacity-80 cursor-pointer' : idx === currentShipIndex ? 'bg-blue-500 text-white hover:bg-blue-600' : 'bg-gray-200 text-gray-600 hover:bg-gray-300 cursor-pointer'
                     }`}
                   >
                     {ship.name} ({ship.size})
