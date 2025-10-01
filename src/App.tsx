@@ -123,7 +123,12 @@ function App() {
         setMessage("Your turn! Fire at the enemy board.")
       }, 1500)
     } else {
-      setMessage(`${ship.name} placed! Select another ship to place.`)
+      const nextUnplacedIndex = newShips.findIndex(s => !s.placed)
+      if (nextUnplacedIndex !== -1) {
+        setCurrentShipIndex(nextUnplacedIndex)
+        const nextShip = newShips[nextUnplacedIndex]
+        setMessage(`${ship.name} placed! Now place your ${nextShip.name} (${nextShip.size} cells) - Click cells to select`)
+      }
     }
   }
 
