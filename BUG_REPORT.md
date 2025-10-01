@@ -31,6 +31,12 @@
 
 ---
 
+### 6. Bug: Unlimited Ship Placement per Type 
+- **Problem**: Before starting the game, the player could place multiple ships of the same type (e.g., more than one Carrier), which goes against Battleship rules. There was no visual feedback to show which ships had already been placed, and no way to reset an individual ship.  
+- **Fix**: Limited ship placement to one of each type. Once placed, the ship name is shadowed to indicate it’s used. Additional placements of that ship are blocked unless the user clicks the ship name again to reset and reposition it.
+
+---
+
 ### Additional Bugs Found During Implementation
 
 - **Detailed ship visuals not showing during placement:**  
