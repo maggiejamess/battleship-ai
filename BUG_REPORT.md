@@ -1,4 +1,4 @@
-# 🐛 Bug Report – Battleship AI Game
+# Bug Report: Battleship AI Game
 
 ### 1. Bug: AI Repeated Shots
 - **Problem**: AI would sometimes fire at the same grid square more than once.
@@ -36,6 +36,16 @@
 - **Fix**: Limited ship placement to one of each type. Once placed, the ship name is shadowed to indicate it’s used. Additional placements of that ship are blocked unless the user clicks the ship name again to reset and reposition it.
 
 ---
+
+### 7. Bug: Misleading Error Message During Ship Placement  
+- **Problem**: When trying to place a ship adjacent to another ship, the game displayed the error message:  
+*"Cells must form a straight line with no gaps!"*  
+This was misleading because the placement failed due to proximity, not alignment or gaps. The message didn’t make it clear that ships cannot be placed adjacent to one another.
+- **Fix**:  
+The error message was updated to clarify all reasons for invalid placement. The new message now reads:  
+*"Invalid placement! Cells must form a straight line with no gaps and cannot be adjacent to other ships."*  
+No changes were made to the validation logic—just the displayed message for better user understanding.
+
 
 ### Additional Bugs Found During Implementation
 
