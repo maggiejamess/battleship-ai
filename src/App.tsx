@@ -99,11 +99,8 @@ function App() {
     })
     
     const ship = playerShips[currentShipIndex]
-    ship.coordinates = coordinates
-    ship.placed = true
-    
     const newShips = [...playerShips]
-    newShips[currentShipIndex] = ship
+    newShips[currentShipIndex] = { ...ship, coordinates, placed: true }
     
     const newHistory = placementHistory.slice(0, historyIndex + 1)
     newHistory.push({ board: newBoard, ships: newShips })
