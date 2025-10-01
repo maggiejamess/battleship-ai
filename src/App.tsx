@@ -236,7 +236,7 @@ function App() {
       
       if (newSelection.length > 1) {
         if (!validateShipPlacement(newSelection)) {
-          setMessage('Cells must form a straight line with no gaps!')
+          setMessage('Invalid placement! Cells must form a straight line with no gaps and cannot be adjacent to other ships.')
           return
         }
       }
