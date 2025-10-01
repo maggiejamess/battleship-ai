@@ -2,11 +2,11 @@
 
 A simple web-based Battleship game where you play against a smart AI opponent.
 
-🔗 **Live Game:** [https://battleship-game-f06pmvk6.devinapps.com/](https://battleship-game-f06pmvk6.devinapps.com/)
+ **Live Game:** [https://battleship-game-f06pmvk6.devinapps.com/](https://battleship-game-f06pmvk6.devinapps.com/)
 
 ---
 
-## 🎮 Features
+## Features
 
 - 10x10 grid
 - Manual ship placement with directional selection
@@ -16,7 +16,7 @@ A simple web-based Battleship game where you play against a smart AI opponent.
 
 ---
 
-## 🚀 Technologies Used
+## Technologies Used (via Devin + exported to GitHub)
 
 - React
 - Vite
@@ -25,7 +25,7 @@ A simple web-based Battleship game where you play against a smart AI opponent.
 
 ---
 
-## 🐛 Bug Report
+## Bug Report
 
 See [BUG_REPORT.md](./BUG_REPORT.md) for details on bugs encountered and fixes applied during development.
 
@@ -60,12 +60,4 @@ See [BUG_REPORT.md](./BUG_REPORT.md) for details on bugs encountered and fixes a
 9. **Final Testing and Deployment**  
    Finally, I conducted end-to-end testing on the deployed game to confirm that all features worked as expected and that the AI opponent was sufficiently challenging.
 
-## 📦 How to Run Locally
-
-1. Clone the repository:
-```bash
-git clone https://github.com/maggiejamess/battleship-ai.git
-cd battleship-ai
-npm install
-npm run dev
 
